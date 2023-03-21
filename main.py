@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# pip install -r requirements.txt
 
-print("hello world")
-print("its testing")
-print("zaharlox")
+print('its main')
