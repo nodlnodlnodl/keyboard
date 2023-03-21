@@ -1,3 +1,3 @@
 # keyboard
 ## Максим Рогов этим займётся
-## Да да, ЗАЙМЕТСЯ
+# pip install -r requirements.txt

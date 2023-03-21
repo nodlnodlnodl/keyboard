@@ -2,4 +2,6 @@
 # -*- coding: utf-8 -*-
 # pip install -r requirements.txt
 
-print('its main')
+
+if __name__ == "__main__":
+    print('its main')
