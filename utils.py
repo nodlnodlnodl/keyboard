@@ -41,4 +41,39 @@ def value_passing_fingers(column, value):
 
 
 def count_steps(first_sim, second_sim):
-    return 228
+    if get_cords(first_sim)[1] - get_cords(second_sim)[1] == 0:  # если символы находятся в одном столбце
+        value_passing_fingers(get_cords(second_sim)[1], abs(get_cords(first_sim)[0] - get_cords(second_sim)[0]))
+        # записываем в словаль колличество шагов в зависимости от разности номеров строк в которые входят элементы
+    else:  # если же символы находятся в разных столбцах
+        if get_cords(first_sim)[0] != get_cords(second_sim)[0]:  # если символы в разных строках
+            match get_cords(second_sim)[1]:  # в зависимости от номеров столбцов записывам кол-во шагов в словарь
+                case 5 | 6:  # т.к. 5й и 6й столбцы бьются 1м пальцем(л. или п. указательным)
+                    # прибавляем 1 шаг для занятия позиции от home ряда
+                    if get_cords(second_sim)[0] == 2:
+                        value_passing_fingers(get_cords(second_sim)[1], 1)
+                    else:
+                        value_passing_fingers(get_cords(second_sim)[1],
+                                              abs(get_cords(first_sim)[0] - get_cords(second_sim)[0]) + 1)
+                case 1 | 2 | 3 | 4 | 7 | 8 | 9 | 10:  # столбцы бьющиеся 1м пальцем
+                    if get_cords(second_sim)[0] == 2:
+                        pass
+                    else:
+                        value_passing_fingers(get_cords(second_sim)[1],
+                                              abs(get_cords(first_sim)[0] - get_cords(second_sim)[0]))
+                case 11:  # 11 и 12 бьются п.мезинцем поэтому прибавляем 1 или 2 шага для занятия позиции
+                    value_passing_fingers(get_cords(second_sim)[1],
+                                          abs(get_cords(first_sim)[0] - get_cords(second_sim)[0]) + 1)
+                case 12:
+                    value_passing_fingers(get_cords(second_sim)[1],
+                                          abs(get_cords(first_sim)[0] - get_cords(second_sim)[0]) + 2)
+        if get_cords(first_sim)[0] == get_cords(second_sim)[0]:  # если символы в одинаковых строках
+            match get_cords(second_sim)[1]:
+                case 5 | 6 | 11:
+                    value_passing_fingers(get_cords(second_sim)[1],
+                                          abs(get_cords(second_sim)[0] - 2) + 1)
+                case 1 | 2 | 3 | 4 | 7 | 8 | 9 | 10:
+                    value_passing_fingers(get_cords(second_sim)[1],
+                                          abs(get_cords(second_sim)[0] - 2))
+                case 12:
+                    value_passing_fingers(get_cords(second_sim)[1],
+                                          abs(get_cords(second_sim)[0] - 2) + 2)
