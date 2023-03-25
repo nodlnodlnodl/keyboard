@@ -4,6 +4,10 @@ from diktor import *
 
 
 def get_cords(symbol):
+    """
+     На ход ноги получаем символ,
+     на выход список из ряда и колоны
+    """
     for key in data_dict:
         for value in data_dict[key]['key']:
             if value == symbol:
@@ -11,6 +15,10 @@ def get_cords(symbol):
 
 
 def get_cords_qwer(symbol):
+    """
+     На ход ноги получаем символ,
+     на выход список из ряда и колоны
+    """
     for key in data_dict:
         for value in data_dict[key]['qwer']:
             if value == symbol:
