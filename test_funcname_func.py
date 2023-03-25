@@ -21,7 +21,7 @@ def test_count_steps_1(text, expected_result):
 
 
 @pytest.mark.parametrize("text, expected_result", [("я", 0),
-                                                   ("Е", 0),
+                                                   ("ЕЕЕ", 0),
                                                    ("акакм4а", 5)])
 def test_count_steps_2(text, expected_result):
     text = re.sub(r'[^А-Яа-яёЁ1-9,*0.]', '', text)
