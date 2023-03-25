@@ -40,7 +40,7 @@ def value_passing_fingers(column, value):
 
 def value_passing_fingers_qwer(column, value):
     """
-    нахера две аналогичные функции, типо похуй так-то работает ничего не изменится
+    нахера две аналогичные функции, так-то работает ничего не изменится
     но сделай покрасоте умоляю
     """
     match column:
@@ -109,8 +109,8 @@ def count_spaces(text):
 
 def count_steps_qwer(first_sim, second_sim):
     """
-    Вы че ебнутые? Интегрируйте эту хуйню в предыдущую функцию
-    на кой хуй тут две аналогичные функции
+    Интегрируйте эту херь в предыдущую функцию
+    на кой хер тут две аналогичные функции
     """
     if get_cords_qwer(first_sim)[1] == get_cords_qwer(second_sim)[1]:
         value_passing_fingers_qwer(get_cords_qwer(second_sim)[1], abs(get_cords_qwer(first_sim)[0] - get_cords_qwer(second_sim)[0]))
