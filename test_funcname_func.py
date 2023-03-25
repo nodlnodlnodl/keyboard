@@ -22,7 +22,7 @@ def test_count_steps_1(text, expected_result):
 
 @pytest.mark.parametrize("text, expected_result", [("я", 0),
                                                    ("Е", 0),
-                                                   ("3", 0)])
+                                                   ("акакм4а", 5)])
 def test_count_steps_2(text, expected_result):
     text = re.sub(r'[^А-Яа-яёЁ1-9,*0.]', '', text)
     text = list(text)
@@ -32,4 +32,4 @@ def test_count_steps_2(text, expected_result):
     text = [i.lower() for i in text]
     for i in range(1, len(text)):
         count_steps(text[i - 1], text[i])
-    assert counter_fingers["f3l"] == expected_result
+    assert counter_fingers["f2l"] == expected_result
