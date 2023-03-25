@@ -1,16 +1,18 @@
 # Анализ удобства раскладки
 ## 
 Для установки модулей используйте `pip install -r requirements.txt`
+
+Для запуска программы используйте `python main.py`
 #
 По данной раскладке мы будем анализировать чо-то там
 
 ![раскладка](https://sun1-24.userapi.com/impg/J9-yxGznQEUdR4_FQGFx62Wn1g_R3vmK3eAr9g/Thd0O5aaJyw.jpg?size=826x251&quality=96&sign=ca66b193e8d7b76a8ae6395dcc858d46&type=album)
 
-раскладка йцукен
+Раскладка йцукен
 
 ![раскладка йцукен](https://hsto.org/r/w1560/getpro/geektimes/post_images/766/a78/9eb/766a789eb2a7bf3e024bbf0602d53d87.png)
 
-раскладка диктор
+Раскладка диктор
 
 ![раскладка диктор](https://hsto.org/r/w1560/getpro/geektimes/post_images/dd7/793/5e6/dd77935e6b65b5b49aad609da43157db.jpg)
 
