@@ -3,7 +3,7 @@ import re
 from diktor import *
 
 
-def get_cords(symbol):
+def get_cords(symbol) -> list:
     """
      На ход ноги получаем символ,
      на выход список из ряда и колоны
@@ -14,7 +14,7 @@ def get_cords(symbol):
                 return [data_dict[key]['raw'], data_dict[key]['column']]
 
 
-def get_cords_qwer(symbol):
+def get_cords_qwer(symbol) -> list:
     """
      На ход ноги получаем символ,
      на выход список из ряда и колоны
