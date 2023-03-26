@@ -3,7 +3,6 @@
 # pip install -r requirements.txt
 from utils import *
 
-
 if __name__ == "__main__":
     with open('text.txt', 'r', encoding='utf-8') as f:
         text = f.read()
